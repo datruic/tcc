@@ -1,0 +1,56 @@
+
+
+<!--Section: Blog v.1-->
+<section class="py-4 text-center text-lg-left">
+  <div *ngIf="heading">
+    <!--Section heading-->
+    <h1 class="h1 font-weight-bold text-center mb-5 pt-4">{{heading}}</h1>
+  </div>
+</section>
+<!--Section: Blog v.1-->
+
+
+
+<!--Section: Blog v.1-->
+<section class="py-4 text-center text-lg-left">
+  <div *ngFor="let item of item_details">
+    <!--Grid row-->
+    <div class="row">
+
+      <!--Grid column-->
+      <div class="col-lg-5 col-xl-5 pb-3">
+        <!--Featured image-->
+        <div class="view overlay rounded z-depth-2 waves-light" mdbWavesEffect>
+          <img id="item_img" src="{{item.img}}" alt="Sample image for first version of blog listing"
+               class="img-fluid">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-7 col-xl-7">
+        <h3 class="mb-4 font-weight-bold dark-grey-text">
+          <strong>{{item.title}}</strong>
+        </h3>
+        <!--<h5>-->
+          {{item.descr}}
+        <!--</h5>-->
+
+        <div *ngIf="!mode" class="md-form form-group text-center">
+          <a class="btn btn-primary btn-lg waves-light" mdbWavesEffect>Register</a>
+        </div>
+      </div>
+      <!--Grid column-->
+    </div>
+
+    <!--Grid row-->
+
+    <hr class="mb-5 mt-5 pb-3">
+
+    <!--Grid row-->
+  </div>
+</section>
+<!--Section: Blog v.1-->

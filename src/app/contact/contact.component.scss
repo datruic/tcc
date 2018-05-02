@@ -1,22 +1,28 @@
+html,
+body,
+.view {
+  height: 100vh;
+}
 
+@media (max-width: 740px) {
+  html,
+  body,
+  .view {
+    height: 1100px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  .view {
+    height: 700px;
+  }
+}
 .intro-2 {
   background: url("../../assets/contact_bg_image.png")no-repeat center center;
   background-size: cover;
 }
-.view {
-  height: 100vh !important;
-}
-.top-nav-collapse {
-  background-color: #ff8a65 !important;
-}
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
-}
-@media (max-width: 768px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #ff8a65 !important;
-  }
-}
+
 .md-form .prefix {
   font-size: 1.5rem;
   margin-top: 1rem;
@@ -24,6 +30,7 @@
 h6 {
   line-height: 1.7;
 }
+
 @media (max-width: 740px) {
   .full-height,
   .full-height body,
